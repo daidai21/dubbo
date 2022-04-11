@@ -1956,4 +1956,10 @@ class URL implements Serializable {
     public URL toSerializableURL() {
         return returnURL(URLPlainParam.toURLPlainParam(urlParam));
     }
+
+    public static void main(String[] args) {
+        URL url = new URL("dubbo", "127.0.0.1", 8000);
+        System.out.println(url);
+        System.out.println(url.toSerializableURL());
+    }
 }
