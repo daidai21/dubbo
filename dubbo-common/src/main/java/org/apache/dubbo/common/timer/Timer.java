@@ -35,6 +35,7 @@ public interface Timer {
      * @throws RejectedExecutionException if the pending timeouts are too many and creating new timeout
      *                                    can cause instability in the system.
      */
+    // 提交一个定时任务（TimerTask），类似于向线程池提交任务
     Timeout newTimeout(TimerTask task, long delay, TimeUnit unit);
 
     /**

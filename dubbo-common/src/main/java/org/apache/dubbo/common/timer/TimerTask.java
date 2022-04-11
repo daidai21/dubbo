@@ -22,6 +22,7 @@ import java.util.concurrent.TimeUnit;
  * A task which is executed after the delay specified with
  * {@link Timer#newTimeout(TimerTask, long, TimeUnit)} (TimerTask, long, TimeUnit)}.
  */
+// Timeout 对象与 TimerTask 对象一一对应，类似线程池返回的 Future 对象与提交到线程池中的任务对象之间的关系。
 public interface TimerTask {
 
     /**
