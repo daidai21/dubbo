@@ -19,6 +19,7 @@ package org.apache.dubbo.common.constants;
 /**
  *  constant for Cluster fault-tolerant mode
  */
+// 集群容错模式
 public interface ClusterRules {
 
     /**

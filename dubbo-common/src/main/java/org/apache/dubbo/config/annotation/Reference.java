@@ -82,7 +82,7 @@ public @interface Reference {
     /**
      * Check if service provider is available during boot up, default value is true
      */
-    boolean check() default true;
+    boolean check() default true; // 检查依赖的服务是否正常
 
     /**
      * Whether eager initialize the reference bean when all properties are set, default value is true ( null as true)
